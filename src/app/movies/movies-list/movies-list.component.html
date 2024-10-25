@@ -1,0 +1,25 @@
+<div class="flex flex-wrap px-4 py-8 justify-center">
+  <mat-card *ngFor="let movie of movies" class="m-4">
+    <img
+      mat-card-image
+      [src]="movie.posterUrl"
+      alt="{{ movie.title }}"
+      width="300"
+    />
+    <mat-card-content>
+      <h3>{{ movie.title }}</h3>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        mat-button
+        color="accent"
+        (click)="toggleFavorite(movie)"
+        [ngClass]="{ favorite: isFavorite(movie.id) }"
+      >
+        {{
+          isFavorite(movie.id) ? "Remove from Favorites" : "Add to Favorites"
+        }}
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,101 @@
+{
+  "users": [
+    {
+      "email": "gg@gmail.com",
+      "password": "$2a$10$JPq9Y1nNGpzpQZclSXYR3eTAnJVgMiTM7PkDig8aBsXQlwhKufPUm",
+      "name": "Valentin",
+      "id": "5a6d5be0-3c1c-4187-8f11-1fe194d89ac3"
+    },
+    {
+      "email": "fake@gmail.com",
+      "password": "$2a$10$d4Cux63ZF/Co/Lr0Fb8vaeVtOF/o2d7vM1OPBWxvcL1xxW2EoO4dC",
+      "name": "fio",
+      "id": "b762fe2d-d110-4ca2-9d98-45e0f8baa95b"
+    }
+  ],
+  "favourites": [
+    {
+      "id": "7a55f4de-0bc6-4052-bcee-62d663f501c0",
+      "userId": "b762fe2d-d110-4ca2-9d98-45e0f8baa95b",
+      "movie": {
+        "id": 1,
+        "title": "Inception",
+        "posterUrl": "https://image.tmdb.org/t/p/original/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
+        "overview": "A skilled thief is given a chance at redemption if he can successfully perform inception, the act of planting an idea into a target's subconscious.",
+        "releaseDate": "2010-07-16"
+      }
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "posterUrl": "https://image.tmdb.org/t/p/original/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
+      "overview": "A skilled thief is given a chance at redemption if he can successfully perform inception, the act of planting an idea into a target's subconscious.",
+      "releaseDate": "2010-07-16"
+    },
+    {
+      "id": 2,
+      "title": "Parasite",
+      "posterUrl": "https://www.originalfilmart.com/cdn/shop/files/parasite_2019_french_original_film_art_5000x.jpg?v=1716935881",
+      "overview": "A poor family schemes to become employed by a wealthy family, infiltrating their household and turning their lives upside down.",
+      "releaseDate": "2019-05-30"
+    },
+    {
+      "id": 3,
+      "title": "Interstellar",
+      "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjMwMjUzNjc3Nl5BMl5BanBnXkFtZTgwOTk3MTQ3MjE@._V1_.jpg",
+      "overview": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "releaseDate": "2014-11-07"
+    },
+    {
+      "id": 4,
+      "title": "Mad Max: Fury Road",
+      "posterUrl": "https://m.media-amazon.com/images/M/MV5BMmYyMGNkZDMtNTM5OC00ZTI3LWJhMmMtNTI2OTk4MDFmZTM0XkEyXkFqcGc@._V1_.jpg",
+      "overview": "In a post-apocalyptic wasteland, Max teams up with Furiosa to flee from a tyrant and his army in a high-octane road battle.",
+      "releaseDate": "2015-05-15"
+    },
+    {
+      "id": 5,
+      "title": "Get Out",
+      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png",
+      "overview": "A young African-American visits his white girlfriend's family estate, where he uncovers disturbing secrets.",
+      "releaseDate": "2017-02-24"
+    },
+    {
+      "id": 6,
+      "title": "The Social Network",
+      "posterUrl": "https://image.tmdb.org/t/p/original/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
+      "overview": "The story of the founding of Facebook and the lawsuits that followed its success.",
+      "releaseDate": "2010-10-01"
+    },
+    {
+      "id": 7,
+      "title": "Black Panther",
+      "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_.jpg",
+      "overview": "T'Challa returns home as King of Wakanda but finds his sovereignty challenged by a new adversary with ties to his family's legacy.",
+      "releaseDate": "2018-02-16"
+    },
+    {
+      "id": 8,
+      "title": "La La Land",
+      "posterUrl": "https://m.media-amazon.com/images/M/MV5BMGIyMjhiOWItYzA2Yi00YWU5LWJhMGQtZThlMjBjODYxZGI0XkEyXkFqcGc@._V1_.jpg",
+      "overview": "A jazz musician and an aspiring actress fall in love while pursuing their dreams in Los Angeles.",
+      "releaseDate": "2016-12-09"
+    },
+    {
+      "id": 9,
+      "title": "Joker",
+      "posterUrl": "https://m.media-amazon.com/images/M/MV5BODNlYWNhOTItNjA5Ny00NDE3LWFkMjktMjE0NTg4YWY1OWY3XkEyXkFqcGc@._V1_.jpg",
+      "overview": "A mentally troubled comedian embarks on a downward spiral of social isolation and nihilism, ultimately becoming the Joker.",
+      "releaseDate": "2019-10-04"
+    },
+    {
+      "id": 10,
+      "title": "The Grand Budapest Hotel",
+      "posterUrl": "https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_.jpg",
+      "overview": "The adventures of Gustave H, a legendary concierge at a famous European hotel between the wars, and Zero Moustafa, the lobby boy who becomes his trusted friend.",
+      "releaseDate": "2014-03-28"
+    }
+  ]
+}

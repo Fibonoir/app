@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <span>Movie App</span>
+  <span class="spacer"></span>
+  <ng-container *ngIf="(isLoggedIn$ | async) === false">
+    <a mat-button [routerLink]="['/auth']">Login</a>
+    <a mat-button [routerLink]="['/auth/register']">Register</a>
+  </ng-container>
+  <ng-container *ngIf="isLoggedIn$ | async">
+    <a mat-button [routerLink]="['/movies']">Movies</a>
+    <a mat-button [routerLink]="['/users']">Users</a>
+    <a mat-button [routerLink]="['/profile']">Profile</a>
+    <a mat-button (click)="logout()">Logout</a>
+  </ng-container>
+</mat-toolbar>

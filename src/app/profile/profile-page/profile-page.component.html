@@ -1,0 +1,22 @@
+<div *ngIf="user">
+  <mat-card class="p-4 mb-4">
+    <mat-card-header class=>
+      <mat-card-title>User: {{ user.name }}</mat-card-title>
+    </mat-card-header>
+  </mat-card>
+
+  <h3>Your Favorite Movies</h3>
+  <div class="flex flex-wrap px-4 py-8 justify-center">
+    <mat-card *ngFor="let favorite of favoriteMovies" class="m-4">
+      <img
+        mat-card-image
+        [src]="favorite.movie.posterUrl"
+        alt="{{ favorite.movie.title }}"
+        width="300"
+      />
+      <mat-card-content>
+        <h3>{{ favorite.movie.title }}</h3>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

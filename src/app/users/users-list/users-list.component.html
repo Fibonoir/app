@@ -1,0 +1,8 @@
+<mat-list>
+  <div class="w-1/2 p-8 mx-auto flex flex-col justify-center">
+    <mat-list-item *ngFor="let user of users" class="w-full m-4 border">
+      <h4 matLine>USER NAME: {{ user.name }}</h4>
+      <p matLine>EMAIL: {{ user.email }}</p>
+    </mat-list-item>
+  </div>
+</mat-list>
