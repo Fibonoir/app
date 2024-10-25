@@ -9,6 +9,6 @@
     <a mat-button [routerLink]="['/movies']">Movies</a>
     <a mat-button [routerLink]="['/users']">Users</a>
     <a mat-button [routerLink]="['/profile']">Profile</a>
-    <a mat-button (click)="logout()">Logout</a>
+    <a mat-button (click)="logout()" [routerLink]="['']">Logout</a>
   </ng-container>
 </mat-toolbar>

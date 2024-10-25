@@ -1,7 +1,8 @@
+import { Router } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment.development';
 import { JwtHelperService } from '@auth0/angular-jwt';
-import { BehaviorSubject, catchError, Observable, of, tap } from 'rxjs';
+import { BehaviorSubject, catchError, Observable, of, tap, throwError } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { iUserCredentials } from '../interfaces/user-credentials';
 import { iUserRegData } from '../interfaces/user-reg-data';
@@ -20,7 +21,7 @@ export class AuthService {
   private authStatusSubject = new BehaviorSubject<boolean>(this.isLoggedIn());
   authStatus$ = this.authStatusSubject.asObservable();
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   login(credentials: iUserCredentials): Observable<iAuthResponse> {
     return this.http.post<iAuthResponse>(this.loginUrl, credentials).pipe(
@@ -43,8 +44,6 @@ export class AuthService {
   logout(): void {
     localStorage.removeItem(this.authDataKey);
     this.authStatusSubject.next(false);
-
-
   }
 
   isLoggedIn(): boolean {
@@ -76,10 +75,11 @@ export class AuthService {
     }
   }
 
-  private handleError<T>(operation = 'operation', result?: T) {
+  private handleError<T>(operation = 'operation') {
     return (error: any): Observable<T> => {
       console.error(`${operation} failed: ${error.message}`);
-      return of(result as T);
+      return throwError(error);
     };
   }
+
 }
